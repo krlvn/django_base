@@ -1,4 +1,5 @@
-from django.http import HttpResponse
+from django.views.generic import TemplateView
 
-def main_view(request):
-    return HttpResponse('It is main page without a template.')
+
+class MainView(TemplateView):
+    template_name = 'main.html'
