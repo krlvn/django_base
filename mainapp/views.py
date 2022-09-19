@@ -1,3 +1,4 @@
-from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def main_view(request):
+    return HttpResponse('It is main page without a template.')
