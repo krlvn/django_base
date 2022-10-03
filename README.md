@@ -4,7 +4,7 @@
 Basic structure of a Django project.
 
 ## Stack:
-- Python 3.9
+- Python 3.10.7
 - Django 4.1.1
 
 ## Installation:
