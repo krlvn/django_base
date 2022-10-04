@@ -3,11 +3,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
-from mainapp.apps import MainappConfig
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('mainapp.urls', namespace=MainappConfig.name)),
+    path('', include('mainapp.urls', namespace='mainapp')),
 ]
 
 if settings.DEBUG:
