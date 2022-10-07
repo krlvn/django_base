@@ -53,11 +53,11 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
-    # SQLight
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    },
+    # # SQLight
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # },
     # # MySQL
     # 'default': {
     #     'ENGINE': 'django.db.backends.mysql',
@@ -69,15 +69,15 @@ DATABASES = {
     #     'OPTIONS': {'charset': 'utf8mb4'},
     # },
     # PostgreSQL
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
-    #     'HOST': os.getenv('DB_HOST'),
-    #     'PORT': os.getenv('DB_PORT'),
-    #     'NAME': os.getenv("DB_NAME"),
-    #     'USER': os.getenv("DB_USER"),
-    #     'PASSWORD': os.getenv("DB_PASSWORD"),
-    #     'OPTIONS': {'charset': 'utf8mb4'},
-    # },
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': os.getenv('DB_HOST'),
+        'PORT': os.getenv('DB_PORT'),
+        'NAME': os.getenv("DB_NAME"),
+        'USER': os.getenv("DB_USER"),
+        'PASSWORD': os.getenv("DB_PASSWORD"),
+        'OPTIONS': {'charset': 'utf8mb4'},
+    },
 }
 
 
